@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Shopping Cart Software | ecommerce software | online store builder</title>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://salesiq.zoho.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://salesiq.zoho.com">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/bootstrap-icons-1.11.2.css">
+  <link href="styles/bootstrap-5.3.1.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <div id="header-container"></div>
+
+  <!-- Hero image -->
+  <div class="container">
+    <div class="row align-items-center pt-5 overflow-hidden">
+      <div class="col-md-6 py-5">
+        <h1 class="slogan">Partner with Us </h1>
+      </div>
+      <div class="col-md-6 py-5">
+        <div class="image-container-80 rounded">
+          <img src="images/partner.jpg" alt="partner" class="img-fluid cover-image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Expand your business through a partnership with FastCommerce -->
+  <div class="container-fluid py-5" id="sell_online">
+    <div class="row  justify-content-center mt-3">
+      <div class="col-md-9">
+        <h1 class="display-4 fw-bold text-center">Expand your business through a partnership with FastCommerce</h1>
+        <p class="lead text-center">Boost your income, enrich your expertise, and broaden your connections by joining
+          our vibrant global community of agency, consulting, and affiliate partners.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Agency Partners -->
+  <div class="container-fluid my-5" id="partnersformbox">
+    <div class="container">
+      <div class="card border-0 p-5">
+        <div class="card-body">
+          <h1 class="card-title mb-4">Agency Partners</h1>
+          <p>Earn a generous 25% commission on revenue by referring clients to FastCommerce and gain exclusive access to
+            our product development team for expedited support.</p>
+          <button id="btnShowForm" class="btn btn-primary">Join Now</button>
+          <div class="row">
+            <form id="formSection" class="d-none col-lg-6 mx-auto">
+              <div class="mb-3">
+                <label for="firstName" class="form-label fw-semibold">First Name &ast;</label>
+                <input type="text" class="form-control" id="firstName" required maxlength="100">
+              </div>
+              <div class="mb-3">
+                <label for="lastName" class="form-label fw-semibold">Last Name &ast;</label>
+                <input type="text" class="form-control" id="lastName" required maxlength="100">
+              </div>
+              <div class="mb-3">
+                <label for="title" class="form-label fw-semibold">Title</label>
+                <input type="text" class="form-control" id="title" maxlength="100">
+              </div>
+              <div class="mb-3">
+                <label for="emailAddress" class="form-label fw-semibold">Email Address &ast;</label>
+                <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" required
+                  maxlength="100">
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label fw-semibold">Phone &ast;</label>
+                <input type="number" class="form-control" id="phone" required maxlength="20">
+              </div>
+              <div class="mb-3">
+                <label for="company" class="form-label fw-semibold">Company &ast;</label>
+                <input type="text" class="form-control" id="company" required maxlength="200">
+              </div>
+              <div class="mb-3">
+                <label for="website" class="form-label fw-semibold">Website URL &ast;</label>
+                <input type="text" class="form-control" id="website" required maxlength="200">
+              </div>
+              <div class="mb-3">
+                <label for="address" class="form-label fw-semibold">Address &ast;</label>
+                <input type="text" class="form-control" id="address" required maxlength="200">
+              </div>
+              <div class="mb-3">
+                <label for="city" class="form-label fw-semibold">City &ast;</label>
+                <input type="text" class="form-control" id="city" required maxlength="100">
+              </div>
+              <div class="mb-3">
+                <label for="country" class="form-label fw-semibold">Country &ast;</label>
+                <select class="form-select" id="country" required onchange="loadStates(this.value)">
+                  <option selected value="US">United States</option>
+                </select>
+              </div>
+              <div class="mb-3" id="statebox">
+                <label for="state" class="form-label fw-semibold">State/Province</label>
+                <select class="form-select" id="state">
+                  <option selected>Select state/province</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="postalCode" class="form-label fw-semibold">Postal Code &ast;</label>
+                <input type="text" class="form-control" id="postalCode" required maxlength="20">
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Please select your Business Type, check all that apply</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Designer">
+                  <label class="form-check-label" for="designer">
+                    Designer
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Web Developer">
+                  <label class="form-check-label" for="webDeveloper">
+                    Web Developer
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Full Service Advertising Agency">
+                  <label class="form-check-label" for="advertising">
+                    Full Service Advertising Agency
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Marketing Services Agency">
+                  <label class="form-check-label" for="marketing">
+                    Marketing Services Agency
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value=" IT integrator and/or solution provider">
+                  <label class="form-check-label" for="integrator">
+                    IT integrator and/or solution provider
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="eCommerce Consultant">
+                  <label class="form-check-label" for="consultant">
+                    eCommerce Consultant
+                  </label>
+                </div>
+              </div>
+              <button id="submitGetInTouch" type="submit" class="btn btn-primary">Submit</button>
+              <!--fastcommerce管理后台，创建一个新的leads table-->
+            </form>
+          </div>
+          <div id="msgSection" class="d-none text-center p-5 m-5 bg-gray rounded">
+            <h1>Thank you!</h1>
+            <p>We appreciate your interest in becoming a FastCommerce partner. Our team will carefully review your
+              application and respond to you within the next 48 hour.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid my-5">
+    <div class="container">
+      <div class="card border-0 p-5">
+        <div class="card-body">
+          <h1 class="card-title mb-4">Affiliate Partners</h1>
+          <p>Earn recurring income with the FastCommerce Affiliate Program. Refer visitors to FastCommerce and earn 25%
+            of
+            the customer's first-year payment.</p>
+          <a href="#" class="btn btn-primary">Join Now</a> <!-- link to Impact.com account -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <script src="scripts/jquery-3.5.1.min.js"></script>
+  <script src="scripts/render.js"></script>
+  <script src="scripts/chatbox.js"></script>
+  <script src="scripts/bootstrap.bundle-5.3.1.min.js"></script>
+  <script src="scripts/bootstrap-4.5.2.min.js"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="scripts/main.js?v=20231030"></script>
+</body>
+
+</html>
