@@ -1,13 +1,14 @@
  // Fetch header content and append it to the header-container
 fetch('header.html').then(response => response.text()).then(data => {$('#header-container').html(data)});
 
-//  // Fetch header2 content and append it to the header-container
-// fetch('header2.html').then(response => response.text()).then(data => {$('#header-container-2').html(data)});
+ // Fetch header2 content and append it to the header-container
+fetch('header2.html').then(response => response.text()).then(data => {$('#header-container-2').html(data)});
 
 // Fetch footer content and append it to the footer-container
 fetch('footer.html').then(response => response.text()).then(data => {$('#footer-container').html(data)});
 
 jQuery("#header-container").animate({opacity:'show', height:'show'},200);
+jQuery("#header-container-2").animate({opacity:'show', height:'show'},200);
 jQuery("#footer-container").animate({opacity:'show', height:'show'},200);
 
 $.ajax({
